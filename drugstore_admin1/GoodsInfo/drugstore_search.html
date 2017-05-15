@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="../Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="ProcessDrugIndex.ashx"><span class="glyphicon
+glyphicon-heart"></span>九州网上药店</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-left" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li ><a href="ProcessDruginfo.ashx"><span class="glyphicon
+glyphicon-th-list"></span>全部商品</a></li>
+            <li class="active"><a href="#"><span class="glyphicon
+glyphicon-th-list"></span>搜索/类型</a></li>
+            <li><a href="../ShopCartInfo/ProcessShoppingIndex.ashx"><span class="glyphicon
+glyphicon-credit-card"></span>购物车</a></li>
+            <li><a href="../OrderInfo/ProcessOrderIndex.ashx"><span class="glyphicon
+glyphicon-tasks"></span>订单查看</a></li>
+<li ><a href="../NewsInfo/ProcessNews.ashx"><span class="glyphicon
+glyphicon-th-list"></span>新闻中心</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    个人中心 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <form class="navbar-form navbar-left" action="drugstore_search.ashx" method="post" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" name="goods_name" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default"><span class="glyphicon
+glyphicon-search"></span>搜索药品</button>
+        </form>
+        
+    </div>
+    <ul class="nav navbar-nav navbar-right"> 
+            <li><a href="../UsersInfo/ProcessPassword.ashx"><span class="glyphicon glyphicon-user"></span> @user_name</a></li> 
+            <li><a href="../UsersInfo/ProsessUsersLogout.ashx" onclick="return confirm('确认退出当前账号?')"><span class="glyphicon glyphicon-log-out"></span> 注销</a></li> 
+        </ul> 
+    </div>
+</nav>
+<div class="container-fluid" style="margin-top:100px">
+<div class="row">
+    
+    
+
+    @content
+    
+</div>
+
+    
+</div>
+    </body>
+    <script src="../Public/js/jquery.js"></script>
+    <script src="../Public/bootstrap/js/bootstrap.min.js"></script>
+</html>

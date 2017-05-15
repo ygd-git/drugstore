@@ -1,0 +1,15 @@
+C:\Users\yangguodong\Desktop\drugstore_admin1\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yangguodong\Desktop\drugstore_admin1\Common\bin\Debug\Common.dll
+C:\Users\yangguodong\Desktop\drugstore_admin1\Common\bin\Debug\Common.pdb
+C:\Users\yangguodong\Desktop\drugstore_admin1\Common\obj\Debug\Common.dll
+C:\Users\yangguodong\Desktop\drugstore_admin1\Common\obj\Debug\Common.pdb
+C:\Users\yangguodong\Desktop\drugstore_admin5-11\Common\bin\Debug\Common.dll
+C:\Users\yangguodong\Desktop\drugstore_admin5-11\Common\bin\Debug\Common.pdb
+C:\Users\yangguodong\Desktop\drugstore_admin5-11\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yangguodong\Desktop\drugstore_admin5-11\Common\obj\Debug\Common.dll
+C:\Users\yangguodong\Desktop\drugstore_admin5-11\Common\obj\Debug\Common.pdb
+C:\Users\yangguodong\Desktop\5-10\drugstore_admin5-11\Common\bin\Debug\Common.dll
+C:\Users\yangguodong\Desktop\5-10\drugstore_admin5-11\Common\bin\Debug\Common.pdb
+C:\Users\yangguodong\Desktop\5-10\drugstore_admin5-11\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yangguodong\Desktop\5-10\drugstore_admin5-11\Common\obj\Debug\Common.dll
+C:\Users\yangguodong\Desktop\5-10\drugstore_admin5-11\Common\obj\Debug\Common.pdb

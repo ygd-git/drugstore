@@ -1,0 +1,133 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="http://v3.bootcss.com/favicon.ico">
+
+        <title>Dashboard Template for Bootstrap</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../Public/drugstore_admin_index_files/bootstrap.min.css" rel="stylesheet">
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="../Public/drugstore_admin_index_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="../Public/drugstore_admin_index_files/dashboard.css" rel="stylesheet">
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="../Public/drugstore_admin_index_files/ie-emulation-modes-warning.js.下载"></script>
+
+        <script src="../Public/js/jquery.js"></script>
+        <script src="../Public/js/jquery-migrate-1.2.1.js"></script>
+        <script type="text/javascript" src="../Public/uEditor/uEditor.js"></script>
+        <script src="../Public/js/admin_news.js"></script>
+
+        <link rel="stylesheet" href="../Public/uEditor/uEditor.css" type="text/css" />
+        
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">九州网上药店后台</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">@admin</a></li>
+               <li><a href="../AdminInfo/AdminLogout.ashx" onclick="return confirm('确认登出?')">logout</a></li>
+                
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                  <ul class="nav nav-sidebar">
+                    <li ><a href="../AdminInfo/ProcessAdminIndex.ashx">首页</a></li>
+                   
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <li ><a href="../UsersInfo/ProcessAdminUsers.ashx">用户管理</a></li>
+                    
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <li ><a href="../OrderInfo/ProcessAdminOrder.ashx">订单管理</a></li>
+                    
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <li><a href="../GoodsInfo/ProcessAdminProduct.ashx">商品管理</a></li>
+                    
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <li class="active"><a href="ProcessAdminNews.ashx">新闻管理</a></li>
+                    
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <li><a href="../SettingTypeInfo/ProcessAdminSettings.ashx">系统设置</a></li>
+                            
+                  </ul>
+                </div>
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                    <h1 class="page-header">添加新闻</h1>
+                    <form action="ProcessAdminAddNews.ashx" method="post" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="title" class="col-lg-2 control-label">标题:</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="title" name="title" placeholder = "请输入新闻标题(最长为50)" maxlength="50">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="type" class="col-lg-2 control-label">新闻类型:</label>
+                            <div class="col-lg-8">
+                                <select name="type" id="type">
+                                    @newstype_content
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="content" class="col-lg-2 control-label">标题:</label>
+                            <div class="col-lg-8">
+                                <textarea class="uEditorCustom" name="content" id="content" >请输入新闻内容   图片请先放置在news_img文件夹下  路径填写 ../images/news_img/完整文件名</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-4">
+                                <input type="reset" value="重置" class="btn btn-lg btn-primary">
+                                &nbsp;
+                                <input type="submit" value="提交" class="btn btn-lg btn-info">
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+  
+</html>
